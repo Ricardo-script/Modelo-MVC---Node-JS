@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Adicionar Noticias</h1><hr>
+    <form action="/salvar/dados" method="POST">
+        <label>Título da Noticia</label>
+        <input type="text" id="titulo" name="titulo"><br>
+        <label>Data da Noticia</label>
+        <input type="date" id="data_noticia" name="data_noticia"><br>
+        <label>Autor</label>
+        <input type="text" id="autor" name="autor"><br>
+        <label>Resumo</label>
+        <input type="text" id="resumo" name="resumo"><br>
+        <label>Notícia</label>
+        <textarea name="noticia" id="noticia" cols="50" rows="20"></textarea>
+        <input type="submit" value="enviar">
+    </form>
+    <a href="/">voltar</a>
+</body>
+</html>
